@@ -10,6 +10,7 @@ namespace BT_Abstraction
     {
         protected String? ID;
         protected String? HoTen;
+        protected String? GioiTinh;
         protected String? SDT;
 
         public abstract void HienthiTTin();
