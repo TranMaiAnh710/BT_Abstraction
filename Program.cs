@@ -6,8 +6,8 @@ namespace BT_Abstraction
     {
         static void Main(string[] args)
         {
-            PersonChild sv = new PersonChild(1, "Nguyễn Văn A", 2004, "Nam");
-            sv.HienThiTTin();
+            Person pr = new Person (1, "Nguyễn Văn A", 2004, "Nam");
+            pr.HienThiTTin();
 
             Console.ReadLine();
         }

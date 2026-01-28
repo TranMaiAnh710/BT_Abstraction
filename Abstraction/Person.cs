@@ -6,15 +6,30 @@ using System.Threading.Tasks;
 
 namespace BT_Abstraction.Abstraction
 {
-    public abstract class Person
+    public class Person
     {
-        protected int ID { get; set; }
-        protected string? HoTen { get; set; }
-        protected int NamSinh { get; set; }
-        protected string? GioiTinh { get; set; }
-        protected string? SDT { get; set; }
-        protected string? DiaChi { get; set; }
+        int ID { get; set; }
+        string? HoTen { get; set; }
+        int NamSinh { get; set; }
+        string? GioiTinh { get; set; }
+        string? SDT { get; set; }
+        string? DiaChi { get; set; }
 
-        public abstract void HienThiTTin();
+        public Person(int id, string hoTen, int namSinh, string gioiTinh)
+        {
+            ID = id;
+            HoTen = hoTen;
+            NamSinh = namSinh;
+            GioiTinh = gioiTinh;
+        }
+        public void HienThiTTin()
+        {
+            Console.OutputEncoding = Encoding.UTF8; // chữa lỗi encoding của Console
+
+            Console.WriteLine("ID: " + ID);
+            Console.WriteLine("Họ tên: " + HoTen);
+            Console.WriteLine("Năm sinh: " + NamSinh);
+            Console.WriteLine("Giới tính: " + GioiTinh);
+        }
     }
 }
