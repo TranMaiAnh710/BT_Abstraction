@@ -15,6 +15,6 @@ namespace BT_Abstraction.Abstraction
         protected string? SDT { get; set; }
         protected string? DiaChi { get; set; }
 
-        public abstract void HienthiTTin();
+        public abstract void HienThiTTin();
     }
 }
