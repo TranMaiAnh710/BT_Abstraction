@@ -8,10 +8,12 @@ namespace BT_Abstraction
 {
     public abstract class Person
     {
-        protected String? ID;
-        protected String? HoTen;
-        protected String? GioiTinh;
-        protected String? SDT;
+        protected int ID { get; set; }
+        protected string? HoTen { get; set; }
+        protected int NamSinh { get; set; }
+        protected string? GioiTinh { get; set; }
+        protected string? SDT { get; set; }
+        protected string? DiaChi { get; set; }
 
         public abstract void HienthiTTin();
     }
